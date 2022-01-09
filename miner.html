@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Nitro Network</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Nitro Network" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-grid" href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-reboot" href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/map/style.css">
+    <link rel="stylesheet" href="./css/map/mobile.css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-02.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <style>
+        .form-border input[type=password],input[type=text]{
+           margin-bottom:  0px!important;
+        }
+        .field-set{
+           margin-bottom:  20px;
+        }
+        input::placeholder {
+       color: #000 !important; 
+   }
+   #subheader {
+       text-align: center;
+       overflow: hidden;
+       padding: 0 0 100px 0!important;
+       display: none;
+   }
+        </style>
+</head>
+
+<body class="dark-scheme">
+    <div id="wrapper">
+
+            <!-- header begin -->
+            <header class="transparent fixed">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="02_dark-index.html">
+                                            <img alt="" src="https://demonest.lorvensofttech.com/nitro-logo.png" />
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainmenu begin -->
+                                <ul id="mainmenu">
+                                    <li>
+                                        <a href="#">Stats<span></span></a>
+                                        <ul>
+                                            <li><a href="02_dark-activity.html">Activity</a></li>
+                                            <li><a href="02_dark-rankings.html">Rankings</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="menu_side_area">
+                                    <a href="02_dark-wallet.html" class="btn-main btn-wallet"><i class="icon_wallet_alt"></i><span>Connect Wallet</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </header>
+            <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+           
+
+            <!-- section begin -->
+		 
+				<div class="container-fluid">
+					<div class="row">
+
+						<div class="col-md-12">
+                           
+              <div class="confirm-details-page">
+                <div class="confirm-details-sidebar">
+                    <a href="yourlocation.html" class="side-icon">
+                      <i class="fa fa-chevron-left"></i>
+                    </a>
+            
+                    <h4 class="center-in-mobile center">Great Going <br>
+                        Select the type of miner you want to host!
+                    </h4>
+            
+                    <p style="color:red" class="error-miner">  </p>
+                   <div class="miner-boxes">
+                        <a href="#" class="box-det margin-0">
+                        <div class="gradient-box" onclick="next('Lorawan Miner','miner1')">
+                            <div class="field">
+                            <h5   class="border-field miner miner1">Lorawan Miner</h5>
+                                
+                                <p class="selected-field activeminer1 active"></p>
+                            </div> 
+                        </div>
+                    </a >
+                <!--    <a href="#" class="box-det">
+                        <div class="gradient-box" onclick="next('5G Miner' ,'miner2')">
+                            <div class="field">
+                            <h5  class="miner miner2 border-field">5G Miner (coming Soon)</h5>
+                                
+                                <p class="selected-field activeminer2"></p>
+                            </div> 
+                        </div>
+                    </a> -->
+                    
+                   <!-- <a href="#" class="box-det">
+                        <div class="gradient-box"  onclick="next('Uniquyre Miner','miner4')">
+                            <div class="field"> 
+                            <h5 class="miner miner4 border-field">Uniquyre Miner</h5>  
+                                <p class="selected-field activeminer4"></p>
+                            </div> 
+                        </div>
+                    </a>
+                    <a href="#" class="box-det">
+                        <div class="gradient-box"  onclick="next('Nexty Miner','miner5')">
+                            <div class="field">
+                            <h5 class="miner miner5 border-field">Nexty Miner</h5>
+                            
+                                <p class="selected-field activeminer5"></p>
+                            </div> 
+                        </div>
+                    </a> -->
+                   </div>
+            
+            
+            
+                    <a   href="#" onClick="onSubmitMinor()"   class="submit-btn">
+                      <p class="gradeint-text">Proceed</p>
+                      <i class="fa fa-chevron-right box-sho"></i>
+                    </a>
+            
+                  </div>
+            
+                  <div class="earth">
+                    <div id="map"></div>
+                  </div>
+                </div>
+                        </div>
+ 
+
+					</div>
+
+				</div>
+			 
+			<!-- section close -->
+
+        </div>
+        <!-- content close -->
+
+    
+    </div>
+
+
+    
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
+    <script src="js/jquery.lazy.plugins.min.js"></script>
+    <script src="js/designesia.js"></script>
+
+    <script>
+      /*const sidenav = document.querySelector('.side-link');
+
+      const btn = document.querySelector('.bar-btn');
+
+      btn.addEventListener('click' , function(){
+          sidenav.classList.toggle('expand');
+      }) */
+    
+      var placenae=" ";
+      var minor=" ";
+      var address='';
+  function onSubmitMinor() {
+      window.location.href='confirm.html';
+}
+
+  var markerurl =  "{{ asset('plugins/images/nv-map-icon.png') }}";
+function getCookie(name) {
+  var cname = name + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++){
+      var c = ca[i];
+      while(c.charAt(0) == ' '){
+          c = c.substring(1);
+      }
+      if(c.indexOf(cname) == 0){
+          return c.substring(cname.length, c.length);
+      }
+  }
+  return "";
+}
+ var placename = 'M6HF+V8 Visakhapatnam, Andhra Pradesh, India';
+  var lat = '17.67974486964861';
+  var lang = '83.2233631577932';
+ 
+ document.getElementById("pac-input").value=placename;
+  // This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+function initMap() {
+var lang = this.getCookie("lang");
+  var langvalue = lang.replace(/[\(\)]/g,'').split(',');
+ 
+const map = new google.maps.Map(document.getElementById("map"), {
+  center: new google.maps.LatLng(this.lat,this.lang),
+  zoom:20,
+  mapTypeControl: true,
+  mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+      position: google.maps.ControlPosition.LEFT_BOTTOM,
+    },
+  fullscreenControl:false
+});
+var geocoder = new google.maps.Geocoder();
+map.setMapTypeId('hybrid');
+const card = document.getElementById("pac-card");
+const input = document.getElementById("pac-input");
+const biasInputElement = document.getElementById("use-location-bias");
+const strictBoundsInputElement = document.getElementById("use-strict-bounds");
+const options = {
+  fields: ["formatted_address", "geometry", "name","address_components"],
+ 
+  types: ["address"],
+};
+
+map.controls[google.maps.ControlPosition.TOP_LEFT].push(card);
+
+const searchBox = new google.maps.places.SearchBox(input);
+
+// Bind the map's bounds (viewport) property to the autocomplete object,
+// so that the autocomplete requests use the current map bounds for the
+// bounds option in the request.
+//autocomplete.bindTo("bounds", map);
+
+
+
+var pos = {
+            lat:  parseFloat(this.lat),
+            lng:  parseFloat(this.lang)
+          };
+        
+          let contentString = "<div class='text-center' style='text-align:center;'> <a href='javascript:void(0)'>" +this.placename+"</a></div>";
+  infoWindow = new google.maps.InfoWindow({
+    position: pos,
+    content: contentString,
+    boxStyle:{
+              background:'#1a0dab',
+          }
+  });
+
+
+  
+  infoWindow.open(map);
+
+
+
+// When the user selects an address from the drop-down, populate the
+// address fields in the form.
+searchBox.addListener("places_changed", (event) => {
+  infoWindow.close();
+  var marker =[];
+  map.setZoom(3);
+  myPlace=''
+  var places = searchBox.getPlaces();
+  var myPlace = new google.maps.LatLng(places[0].geometry.location.lat(), places[0].geometry.location.lng() );
+  //console.log(myPlace); // Get Latitude
+  var marker = new google.maps.Marker({
+  position: myPlace,
+  map: map
+});
+geocoder.geocode({
+  'latLng': myPlace
+}, function(results, status) {
+
+  if (status == google.maps.GeocoderStatus.OK) {
+    //  console.log(results);
+      deleteCookie("city");
+  deleteCookie("state");
+  deleteCookie("postal_code");
+
+      for (const component of results) {
+  const componentType = component.types[0];
+
+  switch (componentType) {
+    case "locality": {
+       if(component.address_components[0].long_name){
+        this.setCookie("city",component.address_components[0].long_name, 1);    
+       } 
+          
+      break;
+    }
+    case "administrative_area_level_1": {
+      //console.log(component.address_components[0].long_name);
+      this.setCookie("state",component.address_components[0].long_name, 1);
+  
+      break;
+    }
+ 
+    case "country": {
+      this.setCookie("country",component.address_components[0].long_name, 1);      
+      break;
+    }
+
+    case "postal_code": {
+      this.setCookie("postal_code",component.address_components[0].long_name, 1);    
+      break;
+    }
+
+  
+} 
+} 
+
+    if (results[0]) {
+     // alert(results[0].formatted_address);
+      infoWindow.close();
+  // Create a new InfoWindow.
+  deleteCookie("placename");
+  deleteCookie("lat");
+  deleteCookie("lang");
+
+  this.setCookie("placename",results[0].formatted_address, 1);
+
+//  langvalue = String(event.latLng);
+ // langvalue =langvalue.replace(/[\(\)]/g,'').split(',');
+  this.setCookie("lat",places[0].geometry.location.lat(), 1);
+  this.setCookie("lang",places[0].geometry.location.lng(), 1);
+
+let contentString = "<div style='text-align:center;color:black'> <a href='/place' style='text-align:center;color:black'>" +results[0].formatted_address+"<br>Click Here</a></div>";
+  infoWindow = new google.maps.InfoWindow({
+    position:myPlace,
+    content: contentString,
+    boxStyle:{
+              background:'#1a0dab',
+          }
+  });
+
+
+  
+  infoWindow.open(map);
+    }
+  }
+});
+map.panTo(myPlace);
+animateMapZoomTo(map,17);
+
+//var bounds = new google.maps.LatLngBounds();
+//bounds.extend(myPlace);
+//animateMapZoomTo(bounds,18);
+
+});
+google.maps.event.addListener(map, 'click', function(event) {
+geocoder.geocode({
+  'latLng': event.latLng
+}, function(results, status) {
+
+  if (status == google.maps.GeocoderStatus.OK) {
+    //  console.log(results);
+      deleteCookie("city");
+  deleteCookie("state");
+  deleteCookie("postal_code");
+
+      for (const component of results) {
+  const componentType = component.types[0];
+
+  switch (componentType) {
+    case "locality": {
+       if(component.address_components[0].long_name){
+        this.setCookie("city",component.address_components[0].long_name, 1);    
+       } 
+          
+      break;
+    }
+    case "administrative_area_level_1": {
+      //console.log(component.address_components[0].long_name);
+      this.setCookie("state",component.address_components[0].long_name, 1);
+  
+      break;
+    }
+ 
+    case "country": {
+      this.setCookie("country",component.address_components[0].long_name, 1);      
+      break;
+    }
+
+    case "postal_code": {
+      this.setCookie("postal_code",component.address_components[0].long_name, 1);    
+      break;
+    }
+
+  
+} 
+} 
+
+    if (results[0]) {
+     // alert(results[0].formatted_address);
+      infoWindow.close();
+  // Create a new InfoWindow.
+  deleteCookie("placename");
+  deleteCookie("lat");
+  deleteCookie("lang");
+
+  this.setCookie("placename",results[0].formatted_address, 1);
+  document.getElementById("pac-input").value=results[0].formatted_address;
+  
+  langvalue = String(event.latLng);
+  langvalue =langvalue.replace(/[\(\)]/g,'').split(',');
+  this.setCookie("lat",langvalue[0], 1);
+  this.setCookie("lang",langvalue[1], 1);
+
+let contentString = "<div style='text-align:center;color:black'> <a href='/place' style='text-align:center;color:black'>" +results[0].formatted_address+"<br>Click Here</a></div>";
+  infoWindow = new google.maps.InfoWindow({
+    position: event.latLng,
+    content: contentString,
+    boxStyle:{
+              background:'#1a0dab',
+          }
+  });
+
+
+  
+  infoWindow.open(map);
+    }
+  }
+});
+});
+
+
+
+}
+function setCookie(name,value,exp_days) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exp_days*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+function deleteCookie(name) {
+  var d = new Date();
+  d.setTime(d.getTime() - (60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = name + "=;" + expires + ";path=/";
+}
+function animateMapZoomTo(map, targetZoom, commandedZoom) {
+  var currentZoom = commandedZoom || map.getZoom();
+  if (currentZoom != targetZoom) {
+    google.maps.event.addListenerOnce(map, 'zoom_changed', function(event) {
+      animateMapZoomTo(map, targetZoom, currentZoom + (targetZoom > currentZoom ? 1 : -1));
+    });
+    setTimeout(function() {
+      map.setZoom(currentZoom + (targetZoom > currentZoom ? 1 : -1))
+    }, 150);
+  }
+}
+
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7-szaQZjlPydjImzfccBIYrPyik8dB0E&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+
+
+</body>
+
+</html>
